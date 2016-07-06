@@ -2,7 +2,7 @@
 [Primeng](http://www.primefaces.org/primeng/#/)- Rich angular2 UI component library added to [antonybudianto angular2-starter wiki](https://github.com/antonybudianto/angular2-starter/wiki)
 
 
-[![Build Status](https://travis-ci.org/antonybudianto/angular2-starter.svg?branch=master)](https://travis-ci.org/antonybudianto/angular2-starter)
+[![Build Status](https://travis-ci.org/sanketsw/primeng-aungular-starter.svg)](https://travis-ci.org/sanketsw/primeng-aungular-starter)
 [![Build status](https://ci.appveyor.com/api/projects/status/d5b3a9nnxnv5bxa5/branch/master?svg=true)](https://ci.appveyor.com/project/antonybudianto/angular2-starter/branch/master)
 [![Coverage Status](https://coveralls.io/repos/github/antonybudianto/angular2-starter/badge.svg?branch=master)](https://coveralls.io/github/antonybudianto/angular2-starter?branch=master)
 [![Dependency Status](https://david-dm.org/antonybudianto/angular2-starter.svg)](https://david-dm.org/antonybudianto/angular2-starter)
