@@ -1,4 +1,6 @@
-# Angular 2 Starter
+# Primeng Angular 2 Starter
+[Primeng](http://www.primefaces.org/primeng/#/)- Rich angular2 UI component library added to [antonybudianto angular2-starter wiki](https://github.com/antonybudianto/angular2-starter/wiki)
+
 
 [![Build Status](https://travis-ci.org/antonybudianto/angular2-starter.svg?branch=master)](https://travis-ci.org/antonybudianto/angular2-starter)
 [![Build status](https://ci.appveyor.com/api/projects/status/d5b3a9nnxnv5bxa5/branch/master?svg=true)](https://ci.appveyor.com/project/antonybudianto/angular2-starter/branch/master)
@@ -25,7 +27,7 @@
 * [License](#license)
 
 ## Introduction
-Welcome to Angular 2 Starter!
+Welcome to Primeng Angular 2 Starter!
 This starter contains almost everything you need to start developing [Angular 2](https://angular.io/):
 * [NPM](https://www.npmjs.com/) for package manager
 * [TypeScript](http://www.typescriptlang.org/) for the base language
@@ -39,8 +41,9 @@ This starter contains almost everything you need to start developing [Angular 2]
 * [Istanbul](https://github.com/gotwarlost/istanbul) for test coverage
   * with [Remap Istanbul](https://github.com/SitePen/remap-istanbul) for remapping Javascript to TypeScript coverage
 * [SystemJS Builder](https://github.com/systemjs/builder) or [Webpack](https://webpack.github.io/) for module bundling in production
+* [Primeng](http://www.primefaces.org/primeng/#/) integration with a sample accordion on the homepage and event handling
 
-Please visit the [wiki](https://github.com/antonybudianto/angular2-starter/wiki) for more details.
+Please visit the [antonybudianto angular2-starter wiki](https://github.com/antonybudianto/angular2-starter/wiki) for more details.
 
 ## Installation
 Firstly, you need to have [Node.js](https://nodejs.org/en/)
