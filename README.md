@@ -3,10 +3,10 @@
 
 
 [![Build Status](https://travis-ci.org/sanketsw/primeng-aungular-starter.svg)](https://travis-ci.org/sanketsw/primeng-aungular-starter)
-[![Build status](https://ci.appveyor.com/api/projects/status/d5b3a9nnxnv5bxa5/branch/master?svg=true)](https://ci.appveyor.com/project/antonybudianto/angular2-starter/branch/master)
-[![Coverage Status](https://coveralls.io/repos/github/antonybudianto/angular2-starter/badge.svg?branch=master)](https://coveralls.io/github/antonybudianto/angular2-starter?branch=master)
-[![Dependency Status](https://david-dm.org/antonybudianto/angular2-starter.svg)](https://david-dm.org/antonybudianto/angular2-starter)
-[![devDependency Status](https://david-dm.org/antonybudianto/angular2-starter/dev-status.svg)](https://david-dm.org/antonybudianto/angular2-starter#info=devDependencies)
+[![Build status](https://ci.appveyor.com/api/projects/status/d5b3a9nnxnv5bxa5/branch/master?svg=true)](https://ci.appveyor.com/project/sanketsw/primeng-aungular-starter/branch/master)
+[![Coverage Status](https://coveralls.io/repos/github/sanketsw/primeng-aungular-starter/badge.svg?branch=master)](https://coveralls.io/github/sanketsw/primeng-aungular-starter?branch=master)
+[![Dependency Status](https://david-dm.org/sanketsw/primeng-aungular-starter.svg)](https://david-dm.org/sanketsw/primeng-aungular-starter)
+[![devDependency Status](https://david-dm.org/sanketsw/primeng-aungular-starter/dev-status.svg)](https://david-dm.org/sanketsw/primeng-aungular-starter#info=devDependencies)
 
 
 > Angular 2 is still in **Release Candidate** stage, please **don't** use this in production

@@ -1,12 +1,12 @@
 {
-  "name": "angular2-starter",
+  "name": "primeng-angular2-starter",
   "version": "1.0.0-rc.4",
-  "author": "Antony Budianto",
-  "description": "Angular 2 Starter with extensible features",
+  "author": "Sanket Sangwikar",
+  "description": "Primeng Angular 2 Starter with extensible features",
   "main": "src/tmp/app/main.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/antonybudianto/angular2-starter.git"
+    "url": "https://github.com/sanketsw/primeng-aungular-starter.git"
   },
   "engines": {
     "node": ">=4.3"
@@ -37,7 +37,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/antonybudianto/angular2-starter/issues"
+    "url": "https://github.com/sanketsw/primeng-aungular-starter/issues"
   },
   "dependencies": {
     "@angular/common": "2.0.0-rc.4",
@@ -89,6 +89,7 @@
     "typings": "^1.3.1",
     "yargs": "^4.7.1",
     "zone.js": "^0.6.12",
+    "reflect-metadata":"^0.1.3",
     "es6-shim":"^0.35.0",
     "primeng": "1.0.0-beta.9",
     "primeui": "4.1.12"
