@@ -20,6 +20,7 @@ import { Location, LocationStrategy } from '@angular/common';
 import { SpyLocation } from '@angular/common/testing';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import {CONSTANTS} from './shared';
 
 @Component({
     selector: 'as-test',
@@ -65,7 +66,7 @@ describe('AppComponent', () => {
                 let compiled = fixture.debugElement.nativeElement;
                 expect(compiled).toBeDefined();
                 expect(compiled.querySelector('a.navbar-brand'))
-                    .toContainText('Angular 2 Starter');
+                    .toContainText(CONSTANTS.MAIN.APP.BRAND);
             });
         })));
 });
