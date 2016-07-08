@@ -7,11 +7,13 @@ var rev = require('gulp-rev');
 var revReplace = require('gulp-rev-replace');
 var uglify = require('gulp-uglify');
 var cssnano = require('gulp-cssnano');
+var zip = require('gulp-zip');
+var pkg = require('./package.json');
 
 require('@ngstarter/systemjs-extension')(config);
 
 gulp.task('build', function (done) {
-    runSequence('test', 'build-systemjs', 'build-assets', done);
+    runSequence('test', 'build-systemjs', 'build-assets', 'build-zip', done);
 });
 
 /* Concat and minify/uglify all css, js, and copy fonts */
@@ -58,4 +60,10 @@ gulp.task('fonts', function () {
         'node_modules/font-awesome/fonts/*.*'
     ])
     .pipe(gulp.dest(config.build.fonts));
+});
+
+gulp.task('build-zip', () => {
+	return gulp.src(config.build.path + '**')
+		.pipe(zip(pkg.name + '_' + pkg.version +'.zip'))
+		.pipe(gulp.dest('dist'));
 });
