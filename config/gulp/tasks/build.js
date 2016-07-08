@@ -8,7 +8,7 @@ var revReplace = require('gulp-rev-replace');
 var uglify = require('gulp-uglify');
 var cssnano = require('gulp-cssnano');
 var zip = require('gulp-zip');
-var pkg = require('./package.json');
+var pkg = require('../../../package.json');
 
 require('@ngstarter/systemjs-extension')(config);
 
@@ -64,6 +64,6 @@ gulp.task('fonts', function () {
 
 gulp.task('build-zip', () => {
 	return gulp.src(config.build.path + '**')
-		.pipe(zip(pkg.name + '_' + pkg.version +'.zip'))
+		.pipe(zip(pkg.name + '-' + pkg.version +'.zip'))
 		.pipe(gulp.dest('dist'));
 });
