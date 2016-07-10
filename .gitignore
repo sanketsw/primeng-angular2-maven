@@ -1,4 +1,5 @@
 .idea/
+.sonar/
 /node_modules
 /bower_components
 /build
@@ -11,3 +12,4 @@
 /src/app/**/*.js.map
 /src/test/**/*.js
 /src/test/**/*.js.map
+/dist/
