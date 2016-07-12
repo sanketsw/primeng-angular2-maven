@@ -1,5 +1,6 @@
 .idea/
 /dist
+.sonar/
 /node_modules
 /bower_components
 /build

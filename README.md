@@ -1,5 +1,5 @@
-# Primeng Angular 2 Starter
-[Primeng](http://www.primefaces.org/primeng/#/)- Rich angular2 UI component library added to [antonybudianto angular2-starter wiki](https://github.com/antonybudianto/angular2-starter/wiki)
+# Primeng Sonarqube Angular 2 Starter
+Angular2 starter with Continuous Integration, Jenkins DevOps, Automated Test Coverage using Sonarqube and  [Primeng](http://www.primefaces.org/primeng/#/)- Rich angular2 UI component library
 
 
 [![Build Status](https://travis-ci.org/sanketsw/primeng-aungular-starter.svg)](https://travis-ci.org/sanketsw/primeng-aungular-starter)
@@ -13,7 +13,6 @@
 
 > Follow Angular 2 Changelog [here](https://github.com/angular/angular/blob/master/CHANGELOG.md)
 
-> Live Production Build [Demo](https://antonybudianto.github.io/angular2-starter/)
 
 ## Table of Content
 * [Introduction](#introduction)
@@ -21,10 +20,10 @@
 * [Start](#start)
 * [Testing](#testing)
 * [Production](#production)
+* [Running on IBM Bluemix](#Running-on-IBM-Bluemix)
 * [Extension](#extension)
 * [Contributing](#contributing)
 * [Special thanks](#special-thanks)
-* [License](#license)
 
 ## Introduction
 Welcome to Primeng Angular 2 Starter!
@@ -41,9 +40,10 @@ This starter contains almost everything you need to start developing [Angular 2]
 * [Istanbul](https://github.com/gotwarlost/istanbul) for test coverage
   * with [Remap Istanbul](https://github.com/SitePen/remap-istanbul) for remapping Javascript to TypeScript coverage
 * [SystemJS Builder](https://github.com/systemjs/builder) or [Webpack](https://webpack.github.io/) for module bundling in production
-* [Primeng](http://www.primefaces.org/primeng/#/) integration with a sample accordion on the homepage and event handling
 
-Please visit the [antonybudianto angular2-starter wiki](https://github.com/antonybudianto/angular2-starter/wiki) for more details.
+* [Primeng](http://www.primefaces.org/primeng/#/) integration with a sample accordion on the homepage and event handling
+* [Sonarqube] (http://www.sonarqube.org/) inetgartion for static code analysis using [TSLint](https://palantir.github.io/tslint/) and Code coverage of Karma Tests using [SonarTsPlugin] (https://github.com/Pablissimo/SonarTsPlugin)
+
 
 ## Installation
 Firstly, you need to have [Node.js](https://nodejs.org/en/)
@@ -64,6 +64,7 @@ After that, go to the starter directory and just run:
 ```bash
 npm install
 ```
+
 
 ## Start
 Let's start up the server, run:
@@ -108,7 +109,15 @@ or you can create production build and then serve it using Browsersync by runnin
 gulp serve-build
 ```
 The starter defaults to bundle using [SystemJS Builder extension](https://github.com/ngstarter/systemjs-extension).
-There is [Webpack extension](https://github.com/ngstarter/webpack-extension) available too, feel free to swap it as you like.
+There is [Webpack extension](https://github.com/ngstarter/webpack-extension) available too, feel free to swap it as you like.   
+
+Run following in case you run into issues during gulp build
+```
+npm install typings -g
+typing install
+```
+## Running on IBM Bluemix
+
 
 ## Extension
 You can extend this starter with many extensions built by the community. Browse the extensions [here](https://github.com/ngstarter)
@@ -117,10 +126,6 @@ You can extend this starter with many extensions built by the community. Browse 
 Feel free to submit a PR if there are any issues or new features, please read [this](https://github.com/antonybudianto/angular2-starter/wiki/Contributing) before
 
 ## Special thanks
-* For all contributors who have helped this starter improvement
-* John Papa for his awesome [angular-styleguide](https://github.com/johnpapa/angular-styleguide) and [Tour of Heroes](https://github.com/johnpapa/angular2-tour-of-heroes)
-* Julie Ralph for her [ng2-test-seed](https://github.com/juliemr/ng2-test-seed) which helped me a lot to get started with testing feature
-* Minko Gechev for his [angular2-seed](https://github.com/mgechev/angular2-seed) and [angular2-ngc-rollup-build](https://github.com/mgechev/angular2-ngc-rollup-build) which helped a lot
+* Please visit the [antonybudianto angular2-starter wiki](https://github.com/antonybudianto/angular2-starter/wiki) for more details.
 
-## License
-MIT
+
