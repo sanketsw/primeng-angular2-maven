@@ -63,7 +63,7 @@ gulp.task('fonts', function () {
     .pipe(gulp.dest(config.build.fonts));
 });
 
-<<<<<<< HEAD
+
 function excludeFolder (folderName) {
     return ['!'+folderName  , '!'+folderName + '/**'];
 }
@@ -76,10 +76,6 @@ gulp.task('build-zip', () => {
         .concat(excludeFolder('dist'))
         .concat(excludeFolder('report'));
 	return gulp.src(srcArray)
-=======
-gulp.task('build-zip', () => {
-	return gulp.src(config.build.path + '**')
->>>>>>> branch 'master' of https://github.com/sanketsw/primeng-aungular-starter.git
 		.pipe(zip(pkg.name + '-' + pkg.version +'.zip'))
 		.pipe(gulp.dest('dist'));
 });
