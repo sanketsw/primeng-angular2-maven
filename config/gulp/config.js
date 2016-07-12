@@ -83,7 +83,7 @@ module.exports = function () {
         var historyApiFallback = require('connect-history-api-fallback');
         var browserSync = {
             dev: {
-                port: 3000,
+                port: (process.env.VCAP_APP_PORT || 3000),
                 server: {
                     baseDir: './src/',
                     middleware: [historyApiFallback()],
@@ -102,7 +102,7 @@ module.exports = function () {
                 ]
             },
             prod: {
-                port: 3001,
+                port: (process.env.VCAP_APP_PORT || 3001),
                 server: {
                     baseDir: './' + build.path,
                     middleware: [historyApiFallback()]
