@@ -20,7 +20,8 @@ Angular2 starter with Continuous Integration, Jenkins DevOps, Automated Test Cov
 * [Start](#start)
 * [Testing](#testing)
 * [Production](#production)
-* [Running on IBM Bluemix](#Running-on-IBM-Bluemix)
+* [DevOps] (#DevOps) 
+* [Running-on-IBM-Bluemix](#Running-on-IBM-Bluemix)
 * [Extension](#extension)
 * [Contributing](#contributing)
 * [Special thanks](#special-thanks)
@@ -116,8 +117,53 @@ Run following in case you run into issues during gulp build
 npm install typings -g
 typing install
 ```
-## Running on IBM Bluemix
 
+## DevOps
+**Jenkins integration**   
+Execute Shell   
+```
+npm install
+gulp build
+sed -i -- 's/\/source/src/g' report/remap/lcov.info
+```
+Because lcov.info has incorrect source path, it needs to be changed   
+http://stackoverflow.com/questions/37164545/how-to-upload-karma-test-report-to-sonar/38290092#38290092
+
+**SonarQube Integration**   
+sonar-project.properties in the code repo:   
+```
+sonar.projectKey=primeng-angular
+sonar.projectName=primeng-angular
+sonar.projectVersion=1.0
+sonar.souceEncoding=UTF-8
+
+sonar.ts.excludetypedefinitionfiles=true
+sonar.ts.tslintconfigpath=tslint.json
+
+sonar.sources=src/
+sonar.exclusions=**/test/**/*,**/*.d.ts,**/*.spec.ts,**/*.routes.ts,**/tmp/**/*
+
+sonar.ts.lcov.reportpath=report/remap/lcov.info
+sonar.ts.tslintpath=node_modules/tslint/bin/tslint
+```
+
+In Jenkins Job: Execute SonarQube Scanner: Path to project properties: `sonar-project.properties`
+
+**Artifactory Integration**   
+Generic Artifactory Integration   
+Published artifacts: `**/dist/*.zip`
+
+
+## Running-on-IBM-Bluemix
+On gulp build, artifact produced is `primeng-angular2-starter-1.0.0-rc.4.zip` in the dist folder. This zip file contains source code and `build` folder. Build folder are compiled, compressed html, js and css contents that are used to deploy a production level app. 
+
+To push to bluemix execute:   
+`cf push primeng.angular -p dist/primeng-angular2-starter-1.0.0-rc.4.zip `
+
+Bluemix will use nodejs_buildpack and execute `npm install` followed `npm start`
+`npm start` executes server.js and launches the html and css contetns from `build` folder
+
+Hosted: http://primengangular.mybluemix.net/
 
 ## Extension
 You can extend this starter with many extensions built by the community. Browse the extensions [here](https://github.com/ngstarter)
